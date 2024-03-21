@@ -1,0 +1,31 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div {
+    display: flex;
+}
+
+label {
+    display: block;
+    width: 200px; /* Set width for labels */
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+    width: 200px; /* Set width for inputs */
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    width: fit-content;
+}
+/* 
+#lastName {
+    width: 500px;
+} */

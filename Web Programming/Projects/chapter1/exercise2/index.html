@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 2</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<form>
+			<h1>Φόρμα Πληρωμής</h1>
+			<p>
+				Τα υποχρεωτικά πεδία ακολουθούνται από
+				<abbr title="Required Field">*</abbr>
+			</p>
+			<h2>Προσωπικά Στοιχεία</h2>
+
+			<fieldset>
+				<legend>Title</legend>
+				<div class="radio">
+					<input type="radio" id="mr" name="title" value="Mr" />
+					<label for="mr">Mr</label>
+				</div>
+				<div class="radio">
+					<input type="radio" id="mrs" name="title" value="Mrs" />
+					<label for="mrs">Mrs</label>
+				</div>
+				<div class="radio">
+					<input type="radio" id="dr" name="title" value="Dr" />
+					<label for="dr">Dr</label>
+				</div>
+			</fieldset>
+			<div class="personalInfo">
+				<div>
+					<label for="firsName"
+						>Name <abbr title="Required Field">*</abbr></label
+					>
+					<input type="text" name="firsName" id="firsName" />
+				</div>
+				<div>
+					<label for="email"
+						>E-mail <abbr title="Required Field">*</abbr></label
+					>
+					<input type="email" name="email" id="email" />
+				</div>
+				<div>
+					<label for="password"
+						>Password <abbr title="Required Field">*</abbr></label
+					>
+					<input type="password" name="password" id="password" />
+				</div>
+			</div>
+
+			<h2 class="payInfo">Πληροφορίες Πληρωμής</h2>
+			<div>
+				<label for="card">Card type</label>
+				<select id="dropdown">
+					<option value="option1">Visa</option>
+					<option value="option2">Mastercard</option>
+					<option value="option3">American Express (Amex)</option>
+				</select>
+			</div>
+			<div>
+				<label for="cardNumber"
+					>Card Number <abbr title="Required Field">*</abbr></label
+				>
+				<input type="number" name="cardNumber" id="cardNumber" />
+			</div>
+			<div>
+				<label for="date"
+					>Expiration Date <abbr title="Required Field">*</abbr></label
+				>
+				<input type="text" name="date" id="date" placeholder="MM/YY" />
+			</div>
+
+			<button class="button" type="submit">Submit</button>
+		</form>
+	</body>
+</html>
