@@ -6,26 +6,6 @@ Welcome to the Coding Factory Bootcamp repository! This repository contains all 
 
 The Coding Factory Bootcamp is designed to provide participants with hands-on experience in various programming languages, tools, and technologies. Throughout the bootcamp, you'll have the opportunity to work on real-world projects, collaborate with peers, and learn from experienced instructors.
 
-## Repository Structure
-
-/projects
-project1/
-project2/
-...
-/assignments
-assignment1/
-assignment2/
-...
-/lectures
-lecture1/
-lecture2/
-...
-/resources
-textbooks/
-tutorials/
-...
-
-
 ## Getting Started
 
 To get started with the Coding Factory Bootcamp:
