@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 700px;
+    width: 480px;
+    margin: 20px auto;
+}
+
+.form_text {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+ 
+abbr {
+    color: red;
+}
+
+.component input {
+    width: 300px;
+}
+
+.component {
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.fieldset {
+    width: 260px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card {
+    margin-top: 20px;
+    margin-left: 85px;
+    /* text-align: center; */
+}
+
+.button {
+    display: block;
+    margin: 50px auto;
+}

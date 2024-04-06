@@ -1,0 +1,17 @@
+.list-1 {
+    list-style-type: style type disc;
+}
+
+.list-2 {
+    list-style-type: lower-greek;
+    list-style-p;
+}
+
+ul li {
+    color: grey;
+    background-color: aqua;
+}
+
+ul {
+    background-color: blue;
+}

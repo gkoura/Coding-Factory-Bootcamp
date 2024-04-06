@@ -1,0 +1,70 @@
+body {
+    background-color: #5497F4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+form {
+    margin: 200px auto 0;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.login {
+    margin-top: 100px;
+    padding-top: 20px;
+    color: #8B8D8D;
+}
+
+.email input {
+    margin: 10px auto;
+    background-color: #FBF4F4;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.email input::placeholder {
+    padding: 20px;
+}
+
+.password input {
+    margin: 10px auto;
+    background-color: #FBF4F4;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.password input::placeholder {
+    padding: 20px;
+}
+
+button {
+    margin: 10px auto;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    background-color: #5497F4;
+    width: 90%;
+    height: 50px;
+    color: white;
+}
+
+.lost a {
+    color: #8B8D8D;
+}
+
+.signup {
+    text-align: center;
+    color: white;
+}
+
+.signup a {
+    color: white;
+}
