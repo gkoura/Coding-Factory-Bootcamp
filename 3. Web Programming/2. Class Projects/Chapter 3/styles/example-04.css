@@ -1,0 +1,23 @@
+h2 [id], p[id] {
+    background-color: aquamarine;
+}
+/* all h2 and p elements that have an id attribute */
+
+a [href="#"]:hover {
+    background-color: blueviolet;
+}
+/* all a elements with href a */
+
+* [class^="info"] {
+    background-color: chocolate;
+}
+
+*[class*=text] {
+    color: red;
+}
+/* all elements that contain in their class the word text */
+
+h2[class$="title"] {
+    font-style: italic;
+}
+/* class ENDS with the word title */

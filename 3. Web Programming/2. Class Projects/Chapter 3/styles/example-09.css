@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    border: 1px solid black;
+}
+
+.aueb-img {
+    width: 400px;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li:first-child {
+    margin-left: 25px;
+}
+
+nav a {
+    /* background-color: aqua; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 15px 10px;
+    /* giving more space to the link */
+}
+
+nav a:hover {
+    color: grey;
+}
+
+main {
+    margin-top: 50px;
+}
+
+main h1 {
+    text-align: center;
+    
+}
