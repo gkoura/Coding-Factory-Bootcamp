@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.header {
+    background-color: #762224;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.logo > img {
+    height: 100px;
+    width: auto;
+}
+
+.nav {
+    float: left;
+    width: 500px;
+}
+
+.nav > ul {
+    height: 100px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+}
+
+.nav a:hover {
+    background-color: rgb(22, 152, 109);
+}
+
+.nav a:active {
+    background-color: rgb(172, 172, 231);
+}
+
+.home-img {
+    background-image: url(../assets/tep-aueb.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-bottom {
+    margin-bottom: 25px;
+}
+.home-title {
+    width: 50%;
+    color: #762224;
+    font-size: 40px;
+    font-weight: 600;
+}
+.main-title {
+    text-align: center;
+}   
+.gap {
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #762224;
+    padding: 0 10px;
+    color: white;
+}
+.copyright {
+    font-size: 1.2rem;
+}
