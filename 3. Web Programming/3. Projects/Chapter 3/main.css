@@ -41,7 +41,7 @@ form input {
 
 .input-icon {
     height: 40px;
-    position: absolute;
+    /* position: absolute; */
     margin-top: 5px;
     margin-left: 5px;
 }
