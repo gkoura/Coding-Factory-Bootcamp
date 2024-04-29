@@ -1,0 +1,35 @@
+.container-flex {
+    width: 90%;
+    height: 10vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+}
+
+.border-dark {
+    border: 1px solid black;
+}
+
+.flex-item-1 {
+    background-color: aqua;
+    flex: 1 200px;
+    /* flex: grow basis */
+}
+
+.flex-item-2 {
+    background-color: lightblue;
+    flex: 1;
+    /* flex: grow */
+}
+
+
+.flex-item-3 {
+    background-color: lightcyan;
+    flex: 1;
+    
+}
+
+
+/* flex parameters */
+/* flex: grow shrink basis */
