@@ -3,36 +3,54 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * a simple division
- * division with 0 is prohibited with integers in java.
- * produces arithmetic exception
+ * Μία απλή διαίρεση. Διαίρεση με 0
+ * απαγορεύεται στους ακεραίους της Java.
+ * Δίνει ArithmeticException.
  */
 public class DivApp {
+
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numerator = 0;
+        int denominator = 0;
+        int result = 0;
 
-        Scanner in = new Scanner(System.in);
+        System.out.println("Please insert numerator, denominator");
+        numerator = scanner.nextInt();
+        denominator = scanner.nextInt();
 
-        int numerator;
-        int denominator;
-        int result;
+//        if (denominator != 0) {
+//            if (numerator != 0) {
+//                result = numerator / denominator;
+//            } else {
+//                System.out.println("Numerator can no be zero");
+//            }
+//        } else {
+//            System.out.println("Denominator can not be zero");
+//        }
 
-        System.out.println("Insert numerator and denominator");
-        numerator = in.nextInt();
-        denominator = in.nextInt();
-
-
-        //error conditions
+        // Error conditions
         if (denominator == 0) {
-            System.out.println("Error, denominator cannot be zero");
+            System.out.println("Error. Denominator is zero");
             System.exit(1);
         }
 
         if (numerator == 0) {
-            System.out.println("Numerator is 0");
+            System.out.println("Error. Numerator is zero");
             System.exit(1);
         }
 
         result = numerator / denominator;
-        System.out.println(result);
+        System.out.println("Result: " + result);
+
+
+
+//        if (denominator == 0) {
+//            System.out.println("Error. Denominator can not be zero");
+//            System.exit(1);
+//        }
+
+        //result = numerator / denominator;
+
     }
 }

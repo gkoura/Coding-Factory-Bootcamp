@@ -3,23 +3,27 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * calculates the factorial of n (1*2*...*n = n!)
+ * Υπολογίζει το παραγοντικό του n.
+ * Δηλαδή n! = 1*2*3*...*n
+ *
+ * @author a8ana
  */
 public class FactorialApp {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int facto = 1;
+        int n = 0;
+        int i = 1;
 
-        int n;
-        System.out.println("Give n");
+        System.out.println("Please insert n");
         n = in.nextInt();
 
-        int result = 1;
-        int i = 1;
-        while (i<=n) {
-            result *= i;
+        while (i <= n) {
+            facto = facto * i;
             i++;
         }
 
-        System.out.printf("Factorial of %d is %d", n, result);
+        System.out.printf("%d! = %d", n, facto);
     }
 }

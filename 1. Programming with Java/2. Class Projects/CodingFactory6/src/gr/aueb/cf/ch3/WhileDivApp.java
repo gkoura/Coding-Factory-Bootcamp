@@ -1,39 +1,40 @@
 package gr.aueb.cf.ch3;
 
-
 import java.util.Scanner;
 
 /**
- * user inputs 2 integers until numerator is 0
- * program checks if denominator is 0 and if it is prompts again for inputs
+ * Ο χρήστης εισάγει δύο ακεραίους μέχρι
+ * ο αριθμητής να είναι μηδέν.
+ * Το πρόγραμμα ελέγχει τον παρανομαστή αν είναι
+ * 0, και αν είναι 0 δίνει τη δυνατότητα στο χρήστη
+ * να συνεχίσει δίνοντας παρανομαστή διάφορο του μηδενός.
  */
 public class WhileDivApp {
-    public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-        int numerator;
-        int denominator;
-        int result;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numerator = 0;
+        int denominator = 0;
+        int result = 0;
 
         while (true) {
-            System.out.println("Insert numerator and denominator");
-            numerator = in.nextInt();
-            denominator = in.nextInt();
+            System.out.println("Please insert two integers for division (numerator 0 for exit)");
+            numerator = scanner.nextInt();
+            denominator = scanner.nextInt();
 
             if (numerator == 0) {
-                System.out.println("Numerator is 0");
+                System.out.println("Numerator os zero");
                 break;
             }
 
             if (denominator == 0) {
-                System.out.println("Denominator cannot be zero");
+                System.out.println("Denominator should not be zero");
                 continue;
             }
 
-            result = numerator/denominator;
-
-            System.out.println(result);
+            result = numerator / denominator;
+            System.out.printf("%d / %d = %d", numerator, denominator, result);
         }
-
+        System.out.println("Thanks for using our app!");
     }
 }

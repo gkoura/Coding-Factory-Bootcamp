@@ -3,22 +3,25 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * keeps reading until a special value (sentinel) is give e.g. -1
+ * Συνεχίζει το διάβασμα μέχρι να δοθεί μία
+ * ειδική τιμή (sentinel) έστω -1.
  */
 public class SentinelApp {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int num = 0;
+        int iterations = 0;
 
-        int num;
-        int iterations=0;
-
-        System.out.println("Insert a num (0 for exit)");
+        System.out.println("Please insert a num (-1 for exit)");
+        //num = in.nextInt();
 
         while ((num = in.nextInt()) != -1) {
-            System.out.println("Insert a num (<0 for exit)");
             iterations++;
+            System.out.println("Please insert a num (-1 for exit)");
+            //num = in.nextInt();
         }
-        System.out.println("Positives count: " + iterations);
 
+        System.out.println("Positives count: " + iterations);
     }
 }

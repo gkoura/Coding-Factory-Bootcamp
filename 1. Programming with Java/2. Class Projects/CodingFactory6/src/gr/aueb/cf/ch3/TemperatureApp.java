@@ -3,23 +3,23 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * reads from stdin an integer that represents a temperature and checks if temp is less than t
- * prints the result
+ * Διαβάζει από το standard in ένα ακέραιο
+ * που συμβολίζει μία θερμοκρασία και ελέγχει
+ * αν η θερμοκρασία είναι μικρότερη από 0.
+ * Εκτυπώνει το αποτέλεσμα.
  */
 public class TemperatureApp {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
-        int temp;
+        int temp = 0;
         boolean isTempBelowZero = false;
 
         System.out.println("Please insert the temperature (integer)");
         temp = in.nextInt();
 
-        isTempBelowZero = temp <0;
+        isTempBelowZero = temp < 0;
 
-        System.out.println("Temp is below 0: " + isTempBelowZero);
-
-
+        System.out.println("Temp is below zero: " + isTempBelowZero);
     }
 }

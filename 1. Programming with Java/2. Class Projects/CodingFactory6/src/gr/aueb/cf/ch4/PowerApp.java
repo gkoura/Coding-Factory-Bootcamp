@@ -3,23 +3,24 @@ package gr.aueb.cf.ch4;
 import java.util.Scanner;
 
 /**
- * calculates a^b
+ * Υπολογίζει το a^b.
  */
 public class PowerApp {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
+        int base = 0;
+        int power = 0;
         int result = 1;
-        int base;
-        int power;
 
-        System.out.println("Give base and power");
+        System.out.println("Please insert a base and a power");
         base = in.nextInt();
         power = in.nextInt();
 
         for (int i = 1; i <= power; i++) {
-            result *= base;
+            result *= base; // result = result * base
         }
-        System.out.println(result);
+
+        System.out.printf("%d^%d = %d", base, power, result);
     }
 }

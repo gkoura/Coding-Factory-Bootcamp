@@ -1,6 +1,10 @@
 package gr.aueb.cf.ch4;
 
+/**
+ * Εμφανίζει Hello με chars.
+ */
 public class CharHelloApp {
+
     public static void main(String[] args) {
         char h = 'h';
         char e = 'e';
@@ -13,6 +17,6 @@ public class CharHelloApp {
         System.out.print(l);
         System.out.print(l);
         System.out.print(o);
-        System.out.print(bang);
+        System.out.println(bang);
     }
 }

@@ -1,19 +1,21 @@
 package gr.aueb.cf.ch3;
 
-
 import java.util.Scanner;
 
+/**
+ *
+ */
 public class GradesApp {
+
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        int totalGrades = 0;
+        int gradesCount = 0;
+        int average = 0;
 
-        int totalGrades;
-        int gradesCount;
-        int average;
-
-        System.out.println("Insert total grades and grades count");
-        totalGrades = in.nextInt();
-        gradesCount = in.nextInt();
+        System.out.println("Please insert total grades and grades count");
+        totalGrades = scanner.nextInt();
+        gradesCount = scanner.nextInt();
 
         if (gradesCount == 0) {
             System.out.println("Grades count cannot be zero");
@@ -22,21 +24,19 @@ public class GradesApp {
 
         average = totalGrades / gradesCount;
 
-        if (average < 0 || average > 10 ) {
-            System.out.println("Error! The average is not valid");
+        if (average < 0 || average > 10) {
+            System.out.println("Error. The average is not valid");
+            System.exit(1);
         }
 
         if (average >= 9) {
             System.out.println("Excellent");
         } else if (average >= 7) {
             System.out.println("Very Good");
-        }
-        else if (average >= 5) {
+        } else if (average >= 5) {
             System.out.println("Good");
-        }
-        else {
+        } else {
             System.out.println("Fail");
         }
-
     }
 }

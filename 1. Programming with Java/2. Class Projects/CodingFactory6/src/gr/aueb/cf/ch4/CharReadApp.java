@@ -1,28 +1,27 @@
 package gr.aueb.cf.ch4;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * Demo of reading a char
+ * Demo of reading a char.
+ * 1. System.in.read() -> int
  */
 public class CharReadApp {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please insert an ASCII char:");
-        char inputChar1 = scanner.next().charAt(0); // Read a single character from the user
-        int asciiValue = (int) inputChar1; // Get the ASCII value of the character
+    public static void main(String[] args) throws IOException {
+        int inputChar1 = ' ';
+        char inputChar2 = ' ';
+        Scanner in = new Scanner(System.in);
 
-        System.out.println("ASCII char: " + inputChar1);
-        System.out.println("ASCII value: " + asciiValue);
+        System.out.println("Please insert a ASCII char");
+        inputChar1 = System.in.read();
 
-        System.out.println("Please insert a Unicode char:");
-        String inputUnicode = scanner.next(); // Read a Unicode character from the user
-        char inputChar2 = inputUnicode.charAt(0); // Extract the first character
-        int unicodeValue = (int) inputChar2; // Get the Unicode value of the character
+        System.out.println( "Ordinal: " + inputChar1);
+        System.out.println("char: " + (char) inputChar1);
 
-        System.out.println("Unicode char: " + inputChar2);
-        System.out.println("Unicode value: " + unicodeValue);
+        System.out.println("Please insert a Unicode char");
+        inputChar2 = in.nextLine().charAt(0);
+        System.out.println("Unicode Char: " + inputChar2);
     }
 }
-

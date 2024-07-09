@@ -1,7 +1,15 @@
-package gr.aueb.cf.ch1; //fqn - fully qualified name
+package gr.aueb.cf.ch1;
 
+/**
+ * Εκτυπώνει 'Hello World' στο standard output
+ * (κονσόλα).
+ *
+ * @author a8ana
+ */
 public class HelloWorld {
+
     public static void main(String[] args) {
-        System.out.println("Hello World"); //whatever starts with a capital letter is a class in java (e.g. System)
+        System.out.print("Hello World!");
+        System.out.println();
     }
 }
