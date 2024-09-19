@@ -1,0 +1,53 @@
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Files in Coding Factory repo
+Coding\ Factory\ Payments/
+
+# Backup files
+.*$sql_exercise.drawio.bkp
+
+# VS Code settings
+.vscode/
+
+# Attendance Excel file
+Attendance.xlsx
+
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE/Editor settings
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment files
+.env
+
+# Coverage reports
+coverage/
+
+# Jest snapshot files
+*.snap
+
+# Temporary files
+*.tmp
+*.temp
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
