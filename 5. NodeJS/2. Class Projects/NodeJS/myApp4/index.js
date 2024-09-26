@@ -1,26 +1,29 @@
-require('dotenv').config(); // Add this line to load .env variables
-
-const express = require('express');
+const express = require("express");
 const app = express();
 const port = 3000;
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
-    .then(() => { 
-        console.log('Connection to MongoDB established')
-    })
-    .catch(err => { 
-        console.log('Failed to connect to MongoDB', err);
-    });
+app.use(express.json());
 
-const user = require('./routes/user.routes');
+mongoose
+	.connect(process.env.MONGODB_URI, {
+		// useNewUrlParser: true,
+		// useUnifiedTopology: true
+	})
+	.then(() => {
+		console.log("Connection to MongoDB established");
+	})
+	.catch((err) => {
+		console.log("Failed to connect to MongoDB", err);
+	});
 
-app.use('/api/user', user);    
+const user = require("./routes/user.routes");
+const userProduct = require("./routes/user.product.routes");
+
+app.use("/api/user", user);
+app.use("/api/user.product", userProduct);
 
 app.listen(port, () => {
-    console.log(`Server is up on port ${port}`);
+	console.log(`Server is up on port ${port}`);
 });
