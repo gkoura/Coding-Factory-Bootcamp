@@ -31,9 +31,7 @@ public abstract class AbstractEntity implements Serializable {
     protected void onCreate() {
         createdAt = LocalDateTime.now();
         updatedAt = LocalDateTime.now();
-        if (uuid == null) {
-            uuid= UUID.randomUUID().toString();
-        }
+        if (uuid == null) uuid = UUID.randomUUID().toString();
     }
 
     @PreUpdate

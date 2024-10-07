@@ -1,6 +1,5 @@
 package gr.aueb.cf.schoolapp.dto;
 
-
 import lombok.*;
 
 @NoArgsConstructor
@@ -10,6 +9,7 @@ import lombok.*;
 @Builder
 public class TeacherReadOnlyDTO {
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String vat;
+    private String firstname;
+    private String lastname;
 }
