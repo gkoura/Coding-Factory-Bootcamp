@@ -1,31 +1,40 @@
-const express = require("express");
+const express = require('express');
 const app = express();
 const port = 3000;
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const swaggerUI = require("swagger-ui-express");
-const swaggerDocument = require("./swagger.js");
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger');
+const cors = require('cors');
+
+app.use(cors({
+    // origin:"*",
+    origin: ['http://localhost:8000', 'http://www.aueb.gr']
+}));
 
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
-mongoose
-	.connect(process.env.MONGODB_URI, {})
-	.then(() => {
-		console.log("Connection to MongoDB established");
-	})
-	.catch((err) => {
-		console.log("Failed to connect to MongoDB", err);
-	});
+app.use('/', express.static('files'));
 
-const user = require("./routes/user.routes");
-const userProduct = require("./routes/user.product.routes");
+mongoose.connect(process.env.MONGODB_URI)
+    .then(
+        () => { console.log('Connection to MongoDB established')},
+        err => { console.log('Failed to connect to MongoDB')}
+    );
 
-app.use("/api/user", user);
-app.use("/api/user.product", userProduct);
+const user = require('./routes/user.routes');
+const userProduct = require('./routes/user.product.routes');
 
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument.options));
+app.use('/api/users', user);    
+// app.use('/api/product', product);
+app.use('/api/user-product', userProduct )
 
-app.listen(port, () => {
-	console.log(`Server is up on port ${port}`);
-});
+app.use(
+    '/api-docs',
+    swaggerUi.serve,
+    swaggerUi.setup(swaggerDocument.options)
+)
+
+module.exports = app;
