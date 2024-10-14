@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:object="${teacherInsertDTO}">
+    <form action="" method="post">
+
+        <div>
+        <span>
+          Teacher Registration
+        </span>
+        </div>
+
+        <div>
+            <input type="text" name="firstname" placeholder="Name" th:field="*{firstname}">
+        </div>
+
+        <div>
+            <input type="text" name="lastname" placeholder="Last Name" th:field="*{lastname}">
+        </div>
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>

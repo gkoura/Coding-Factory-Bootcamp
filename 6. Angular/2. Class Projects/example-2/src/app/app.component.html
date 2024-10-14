@@ -1,0 +1,11 @@
+<div class="container">
+    <h3>Welcome to Angular</h3>
+    <p>
+        Hello <strong>{{ title }}</strong>
+    </p>
+    <div class="d-flex flex-column gap-3 text-nowrap">
+        <app-person-table [person]="person"></app-person-table>
+        <app-person-table></app-person-table>
+        <app-person-table [person]="person2"></app-person-table>
+    </div>
+</div>
