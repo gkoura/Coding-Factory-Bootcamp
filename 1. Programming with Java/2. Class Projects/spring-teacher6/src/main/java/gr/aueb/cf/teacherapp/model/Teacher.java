@@ -2,23 +2,20 @@ package gr.aueb.cf.teacherapp.model;
 
 import gr.aueb.cf.teacherapp.model.static_data.Region;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 @Builder
 @Table(name = "teachers")
 public class Teacher extends AbstractEntity {
-
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(unique = true)
@@ -26,7 +23,6 @@ public class Teacher extends AbstractEntity {
 
     @Column(unique = true)
     private String vat;
-
 
     private String firstname;
     private String lastname;
@@ -36,11 +32,7 @@ public class Teacher extends AbstractEntity {
     private Region region;
 
     @PrePersist
-    public void initializeUUID(){
-        if (uuid == null) {
-            uuid = UUID.randomUUID().toString();
-        }
+    public void initializeUUID() {
+        if (uuid == null) uuid = UUID.randomUUID().toString();
     }
-
-
 }

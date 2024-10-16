@@ -6,6 +6,5 @@ public class EntityAlreadyExistsException extends EntityGenericException {
 
     public EntityAlreadyExistsException(String code, String message) {
         super(code + DEFAULT_CODE, message);
-
     }
 }
