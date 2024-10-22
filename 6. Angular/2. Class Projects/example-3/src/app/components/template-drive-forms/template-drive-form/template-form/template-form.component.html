@@ -1,0 +1,40 @@
+<div class="d-flex flex-column">
+    <h5>New Person Form</h5>
+    <form #form="ngForm" class="d-flex flex-column">
+        <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input ngModel #givenName="ngModel" matInput type="text" name="givenName" required />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input ngModel #surName="ngModel" matInput type="text" name="surName" required />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Age</mat-label>
+            <input ngModel #age="ngModel"
+                matInput
+                type="number"
+                name="age"
+                required
+                min="18"
+                max="100"
+            />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input ngModel #email="ngModel" matInput type="email" name="email" required />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Address</mat-label>
+            <mat-select ngModel #address="ngModel" name="address">
+                <mat-option value="Road1">Road1</mat-option>
+                <mat-option value="Road2">Road2</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    <button mat-flat-button color="primary" (click)="onSubmit(form.value)">Submit</button>
+</div>

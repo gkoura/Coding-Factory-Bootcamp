@@ -1,0 +1,22 @@
+<table class="table table-bordered table-striped text-wrap">
+    <thead>
+        <tr>
+            <th (click)="sortData('givenName')" class="key">First Name <span [innerHTML]="sortSign('givenName')"></span></th>
+            <th (click)="sortData('surName')" class="key">Last Name <span [innerHTML]="sortSign('surName')"></span></th>
+            <th (click)="sortData('age')" class="key">Age <span [innerHTML]="sortSign('age')"></span></th>
+            <th (click)="sortData('email')" class="key">Email <span [innerHTML]="sortSign('email')"></span></th>
+            <th (click)="sortData('address')" class="key">Address <span [innerHTML]="sortSign('address')"></span></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (row of manyPerson; track row) {
+            <tr class="align-middle" (click)="onPersonClick(row)">
+                <td>{{row.givenName}}</td>
+                <td>{{row.surName}}</td>
+                <td>{{row.age}}</td>
+                <td>{{row.email}}</td>
+                <td>{{row.address}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
