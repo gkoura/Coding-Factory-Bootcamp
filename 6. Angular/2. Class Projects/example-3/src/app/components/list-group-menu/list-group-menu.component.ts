@@ -35,6 +35,10 @@ export class ListGroupMenuComponent {
         {
             text: "Template Driven Form",
             routerLink: "template-driven-form"
+        },
+        {
+            text: "Reactive Form",
+            routerLink: "reactive-form"
         }
     ];
 }
