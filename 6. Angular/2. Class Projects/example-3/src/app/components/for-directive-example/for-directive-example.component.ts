@@ -10,78 +10,76 @@ import { PersonTableComponent } from '../person-table/person-table.component';
   styleUrl: './for-directive-example.component.css'
 })
 export class ForDirectiveExampleComponent {
-
-    users: Person[] = [
+    users:Person[] = [
         {
-            givenName: "Sarah",
-            surName: "Brown",
-            email: "sarah_kay@ymail.com",
-            age: 56,
-            address: "Stockton",
-        },
-        {
-            givenName: "Steven",
-            surName: "Lee",
-            email: "s_lee@yahoo.com",
-            age: 50,
-            address: "Rudyard",
-        },
-        {
-            givenName: "Taylor",
-            surName: "Carter",
-            email: "taylorcarter@ymail.com",
-            age: 73,
-            address: "Abbotsford",
-        },
-        {
-            givenName: "Katherine",
-            surName: "Turner",
-            email: "katherineturner@outlook.com",
-            age: 77,
-            address: "Carroll",
-        },
-        {
-            givenName: "Emily",
-            surName: "White",
-            email: "emwhite36@yahoo.com",
-            age: 28,
-            address: "San Saba",
-        },
-        {
-            givenName: "Sophia",
-            surName: "Torres",
-            email: "storres@gmail.com",
-            age: 24,
-            address: "Oldtown",
-        },
-        {
-            givenName: "Jason",
-            surName: "Jones",
-            email: "j_jones@outlook.com",
-            age: 68,
-            address: "New Rockford",
-        },
-        {
-            givenName: "Daniel",
-            surName: "Wood",
-            email: "d.a.wood@outlook.com",
-            age: 65,
-            address: "Dulles",
-        },
-        {
-            givenName: "Alexandra",
-            surName: "Price",
-            email: "aprice@gmail.com",
-            age: 69,
-            address: "Panama City Beach",
-        },
-        {
-            givenName: "Sean",
-            surName: "Bryant",
-            email: "seanbryant@gmail.com",
-            age: 69,
-            address: "Williamstown",
-        },
-    ];
-
+            "givenName": "Taylor",
+            "surName": "Adams",
+            "email": "tayloradams@live.com",
+            "age": 62,
+            "address": "Fielding"
+          },
+          {
+            "givenName": "Daniel",
+            "surName": "Perry",
+            "email": "dperry@rocketmail.com",
+            "age": 52,
+            "address": "Mechanicsville"
+          },
+          {
+            "givenName": "Jose",
+            "surName": "Sanchez",
+            "email": "jose.t11@yahoo.com",
+            "age": 54,
+            "address": "Freeland"
+          },
+          {
+            "givenName": "Rebecca",
+            "surName": "Robinson",
+            "email": "rrobinson@ymail.com",
+            "age": 30,
+            "address": "Evansville"
+          },
+          {
+            "givenName": "Robert",
+            "surName": "Robinson",
+            "email": "robert_f@aol.com",
+            "age": 38,
+            "address": "Rehoboth"
+          },
+          {
+            "givenName": "Danielle",
+            "surName": "Powell",
+            "email": "d_l_powell@gmail.com",
+            "age": 77,
+            "address": "Salinas"
+          },
+          {
+            "givenName": "Sarah",
+            "surName": "Henderson",
+            "email": "smhenderson65@ymail.com",
+            "age": 59,
+            "address": "Chula Vista"
+          },
+          {
+            "givenName": "Grace",
+            "surName": "Sanchez",
+            "email": "grace.renee.sanchez@yahoo.com",
+            "age": 48,
+            "address": "Bothell"
+          },
+          {
+            "givenName": "Amanda",
+            "surName": "Washington",
+            "email": "a_washington@outlook.com",
+            "age": 27,
+            "address": "Ione"
+          },
+          {
+            "givenName": "Dylan",
+            "surName": "Henderson",
+            "email": "d_s@hotmail.com",
+            "age": 52,
+            "address": "Humphrey"
+          }
+      ]
 }

@@ -1,29 +1,30 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-    selector: "app-event-bind-example",
-    standalone: true,
-    imports: [],
-    templateUrl: "./event-bind-example.component.html",
-    styleUrl: "./event-bind-example.component.css",
+  selector: 'app-event-bind-example',
+  standalone: true,
+  imports: [],
+  templateUrl: './event-bind-example.component.html',
+  styleUrl: './event-bind-example.component.css'
 })
 export class EventBindExampleComponent {
     times: number = 0;
-    userInput: string = "";
+    userInput: string = '';
 
-    incrementTimes() {
+    incrementTimes(){
         this.times++;
     }
 
-    decrementTimes() {
+    decrementTimes(){
         this.times--;
     }
 
-    resetTimes() {
-        this.times = 0;
+    resetTimes(){
+        this.times=0
     }
 
-    onUserInput(event: Event) {
+    onUserInput(event: Event){
+        // console.log(event);
         this.userInput = (event.target as HTMLInputElement).value;
     }
 }
