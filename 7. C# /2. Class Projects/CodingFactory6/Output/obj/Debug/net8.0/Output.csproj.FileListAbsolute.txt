@@ -1,0 +1,15 @@
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/bin/Debug/net8.0/Output
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/bin/Debug/net8.0/Output.deps.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/bin/Debug/net8.0/Output.runtimeconfig.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/bin/Debug/net8.0/Output.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/bin/Debug/net8.0/Output.pdb
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.GeneratedMSBuildEditorConfig.editorconfig
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.AssemblyInfoInputs.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.AssemblyInfo.cs
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.csproj.CoreCompileInputs.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.sourcelink.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/refint/Output.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.pdb
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/Output.genruntimeconfig.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/Output/obj/Debug/net8.0/ref/Output.dll

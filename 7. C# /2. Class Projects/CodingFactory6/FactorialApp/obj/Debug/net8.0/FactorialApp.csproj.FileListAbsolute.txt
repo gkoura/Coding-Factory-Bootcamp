@@ -1,0 +1,15 @@
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.AssemblyInfoInputs.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.AssemblyInfo.cs
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.csproj.CoreCompileInputs.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.sourcelink.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/bin/Debug/net8.0/FactorialApp
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/bin/Debug/net8.0/FactorialApp.deps.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/bin/Debug/net8.0/FactorialApp.runtimeconfig.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/bin/Debug/net8.0/FactorialApp.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/bin/Debug/net8.0/FactorialApp.pdb
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/refint/FactorialApp.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.pdb
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/FactorialApp.genruntimeconfig.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/FactorialApp/obj/Debug/net8.0/ref/FactorialApp.dll

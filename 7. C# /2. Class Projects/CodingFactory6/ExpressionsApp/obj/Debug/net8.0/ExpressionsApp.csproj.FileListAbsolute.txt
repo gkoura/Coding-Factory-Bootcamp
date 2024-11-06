@@ -1,0 +1,15 @@
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/bin/Debug/net8.0/ExpressionsApp
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/bin/Debug/net8.0/ExpressionsApp.deps.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/bin/Debug/net8.0/ExpressionsApp.runtimeconfig.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/bin/Debug/net8.0/ExpressionsApp.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/bin/Debug/net8.0/ExpressionsApp.pdb
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.AssemblyInfoInputs.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.AssemblyInfo.cs
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.csproj.CoreCompileInputs.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.sourcelink.json
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/refint/ExpressionsApp.dll
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.pdb
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ExpressionsApp.genruntimeconfig.cache
+/Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ExpressionsApp/obj/Debug/net8.0/ref/ExpressionsApp.dll
