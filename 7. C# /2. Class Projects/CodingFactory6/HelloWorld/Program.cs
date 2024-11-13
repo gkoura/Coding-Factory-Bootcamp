@@ -1,10 +1,17 @@
-﻿namespace HelloWorld;
+﻿using System;
 
-class Program
+namespace HelloWorld
 {
-    static void Main(string[] args)
+    /// <summary>
+    /// Το πρώτο πρόγραμμα Hello World!
+    /// </summary>
+    internal class Program
     {
-        Console.WriteLine("Hello, World!");
-        Console.WriteLine("Press any key to continue...");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            Console.Write("Hello, Coding Factory!");
+            Console.WriteLine(); 
+        }
     }
 }

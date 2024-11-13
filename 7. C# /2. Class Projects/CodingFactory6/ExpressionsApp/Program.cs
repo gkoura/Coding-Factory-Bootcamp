@@ -1,32 +1,37 @@
-﻿namespace ExpressionsApp;
-
-class Program
+﻿namespace ExpressionsApp
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        int num1 = 10;
-        int num2 = 20;
-        int num3 = 30;
-        int num4 = -40;
+        static void Main(string[] args)
+        {
+            int num1 = 10;
+            int num2 = 20;
+            int num3 = 30;
+            int num4 = 40;
 
-        int sum = num1 + num2 + num3 + num4 + num2;
-        int mul = num1 * num2 * num3 * num4;
-        int div = num1 / num2 * num3 / num4;
-        int mod = num1 % num2 * num3 / num4;
-        int result1 = num1 % num2 * num3 / num4;
-        int result2 = num2 % num2 * num3 / num4;
-        int result3 = num2 % num2 * num3 / num4;
+            int sum = 0;
+            int mul = 1;
+            int div = 0;
+            int mod = 0;
 
-        Console.WriteLine($"Sum: {sum}");
-        Console.WriteLine($"Mul: {mul}");
-        Console.WriteLine($"Div: {div}");
-        Console.WriteLine($"Mod: {mod}");
-        Console.WriteLine($"Result1: {result1}");
-        Console.WriteLine($"Result2: {result2}");
-        Console.WriteLine($"Result3: {result3}");
- 
-        int result4 = Math.Abs(result1);
-        Console.WriteLine($"Result4: {result4}");
-        
+            int result1 = 0;
+            int result2 = 0;
+            int result3 = 0;
+
+            sum = num1 + num2;
+            mul = num1 * num2;
+            div = num1 / num3;
+            mod = num1 % num3;
+
+            result1 = sum++;    // result == 30, sum == 31
+            result3 = --num2;   // result3 - 1, num2 - 1 
+            result1 = sum + 1;
+            result2 = result2 + 5;
+            result2 += 5;
+
+            result3 = (num1 > 0) ? 1 : 0;
+            result3 = Math.Abs(num3);
+            Console.WriteLine(num1++);
+        }
     }
 }

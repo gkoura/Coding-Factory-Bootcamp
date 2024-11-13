@@ -11,7 +11,11 @@ import { HttpClientExampleComponent } from './components/http-client-example/htt
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { RestrictedContentExampleComponent } from './components/restricted-content-example/restricted-content-example.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
-
+import { authGuard } from './shared/guards/auth.guard';
+import { CrudDashboardComponent } from './components/crud/crud-dashboard/crud-dashboard.component';
+import { CrudCreateExampleComponent } from './components/crud/crud-create-example/crud-create-example.component';
+import { CrudReadExampleComponent } from './components/crud/crud-read-example/crud-read-example.component';
+import { CrudUpdateExampleComponent } from './components/crud/crud-update-example/crud-update-example.component';
 
 export const routes: Routes = [
     { path:'component-input-example', component: ComponentInputExampleComponent },
@@ -24,7 +28,12 @@ export const routes: Routes = [
     { path: 'http-client-example', component: HttpClientExampleComponent},
     { path: 'user-registration-example', component: UserRegistrationComponent},
     { path: 'welcome', component: WelcomeComponent },
-    { path: 'restricted-content-example', component:RestrictedContentExampleComponent},
+    { path: 'crud-example', component: CrudDashboardComponent, canActivate:[authGuard]},
+    { path: 'crud-example/create', component: CrudCreateExampleComponent, canActivate:[authGuard] },
+    { path: 'crud-example/read', component: CrudReadExampleComponent, canActivate:[authGuard] },
+    { path: 'crud-example/update', component: CrudUpdateExampleComponent, canActivate:[authGuard] },
+    { path: 'crud-example/delete', component: CrudCreateExampleComponent, canActivate:[authGuard] },
+    { path: 'restricted-content-example', component:RestrictedContentExampleComponent, canActivate:[authGuard]},
     { path: 'login', component:UserLoginComponent},
     { path: '', redirectTo:'/welcome', pathMatch:'full'}
 ];

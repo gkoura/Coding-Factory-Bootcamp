@@ -1,0 +1,99 @@
+<div class="d-flex flex-column gap-2">
+    <app-crud-navbar></app-crud-navbar>
+    <div>
+        <h4>Creste Customer</h4>
+        <h5>Insert Customer</h5>
+    </div>
+
+    <form [formGroup]="form" class="d-flex flex-column gap-2 w-50">
+        <mat-form-field>
+            <mat-label>Name:</mat-label>
+            <input matInput type="text" formControlName="givenName" />
+            <mat-error>Name is mandatory</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Last Name:</mat-label>
+            <input matInput type="text" formControlName="surName" />
+            <mat-error>Last name is mandatory</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>email:</mat-label>
+            <input matInput type="text" formControlName="email" />
+            <mat-error>Email is mandatory</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>VAT:</mat-label>
+            <input matInput type="text" formControlName="afm" />
+            <mat-error>VAT is mandatory</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email:</mat-label>
+            <input matInput type="text" formControlName="email" />
+            <mat-error>Email is mandatory</mat-error>
+        </mat-form-field>
+
+        <div formArrayName="phoneNumbers">
+            @for (phone of phoneNumbers.controls; let i=$index; track i){
+
+            <div [formGroupName="i" ] class="d-flex gap-3 align-items-center">
+                <mat-form-field>
+                    <mat-label>Phone:</mat-label>
+                    <input matInput type="text" formControlName="number" />
+                    <mat-error>Number is mandatory</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Type:</mat-label>
+                    <mat-select formControlName="type">
+                        <mat-option value="mobile">Mobile</mat-option>
+                        <mat-option value="work">Work</mat-option>
+                        <mat-option value="home">Home</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-icon
+                    role="button"
+                    class="cursor-pointer"
+                    (click)="removePhoneNumber(i)"
+                >
+                    delete
+                </mat-icon>
+                <mat-icon
+                    role="button"
+                    class="cursor-pointer"
+                    (click)="addPhoneNumber()"
+                    >add</mat-icon
+                >
+            </div>
+            }
+        </div>
+
+        <div formGroupName="address" class="d-flex flex-column">
+            <mat-form-field>
+                <mat-label>Street</mat-label>
+                <input matInput type="text" formControlName="street" />
+                <mat-error>Street is mandatory</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>City</mat-label>
+                <input matInput type="text" formControlName="city" />
+                <mat-error>City is mandatory</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Zip Code</mat-label>
+                <input matInput type="text" formControlName="zipcode" />
+                <mat-error>Zip Code is mandatory</mat-error>
+            </mat-form-field>
+        </div>
+    </form>
+    <div class="d-flex gap-2">
+        <button mat-raised-button color="primary" [disabled]="form.invalid" (click)="onSubmit()">
+            Submit
+        </button>
+        <button mat-raised-button color="warn" (click)="form.reset()">
+            Reset
+        </button>
+    </div>
+</div>

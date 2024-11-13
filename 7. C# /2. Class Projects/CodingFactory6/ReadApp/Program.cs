@@ -1,21 +1,24 @@
-﻿namespace Input;
-
-/// <summary>
-/// Reads 2 integers from std input and prints
-/// the sum of them
-/// </summary>
-
-class Program
+﻿namespace ReadApp
 {
-    static void Main(string[] args)
+    /// <summary>
+    /// Διαβάζει δύο ακεραίους από το std input
+    /// και εκτυπώνει το άθροσιμά τους.
+    /// </summary>
+    internal class Program
     {
-        int num1;
-        int num2;
-        
-        Console.WriteLine("Enter two numbers: ");
-        num1 = int.Parse(Console.ReadLine()!);
-        num2 = int.Parse(Console.ReadLine()!);
-        
-        Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+        static void Main(string[] args)
+        {
+            int num1;
+            int num2;
+            int result;
+
+            Console.WriteLine("Please insert two integers");
+            num1 = int.Parse(Console.ReadLine()!);
+            num2 = int.Parse(Console.ReadLine()!);
+
+            result = num1 + num2;
+
+            Console.WriteLine($"{num1} + {num2} = {result}");
+        }
     }
 }

@@ -1,14 +1,12 @@
-﻿namespace DataTypes;
-
-class Program
+﻿namespace DataTypes
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        Console.WriteLine($"int: {sizeof(int)}, Min:{int.MinValue}, Max:{int.MaxValue}");
-        Console.WriteLine($"long: {sizeof(long)}, Min:{long.MinValue}, Max:{long.MaxValue}");
-        Console.WriteLine($"float: {sizeof(float)}, Min:{float.MinValue}, Max:{float.MaxValue}");
-        Console.WriteLine($"double: {sizeof(double)}, Min:{double.MinValue}, Max:{double.MaxValue}");
-        Console.WriteLine($"decimal: {sizeof(decimal)}, Min:{decimal.MinValue}, Max:{decimal.MaxValue}");
-        Console.WriteLine($"bool: {sizeof(bool)}, Min:{false}, Max:{true}");
+        static void Main(string[] args)
+        {
+            Console.WriteLine($"int: {sizeof(int) * 8}, Min: {int.MinValue}, Max: {int.MaxValue}");
+            Console.WriteLine($"double: {sizeof(double) * 8}, Min: {double.MinValue}, Max: {double.MaxValue}");
+            Console.WriteLine($"decimal: {sizeof(decimal) * 8}, Min: {decimal.MinValue}, Max: {decimal.MaxValue}");
+        }
     }
 }

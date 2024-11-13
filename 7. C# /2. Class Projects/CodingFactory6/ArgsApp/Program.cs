@@ -1,15 +1,18 @@
-﻿namespace ArgsApp;
+﻿using System;
 
-class Program
+namespace ArgsApp
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        if (args.Length != 3)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Error: Usage: dotner run <arg0> <arg1> <arg2>");
-            Environment.Exit(1);
-        }
+            if (args.Length != 3)
+            {
+                Console.WriteLine("Error. Parameters count must be three");
+                Environment.Exit(1);
+            }
 
-        Console.WriteLine($"{args[0]} {args[1]} {args[2]}");
+            Console.WriteLine($"{args[0]}, {args[1]}, {args[2]}");
+        }
     }
 }
