@@ -9,5 +9,3 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ReadApp
 build_property.ProjectDir = /Users/greg/Developer/Coding Factory/7. C# /2. Class Projects/CodingFactory6/ReadApp/
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 

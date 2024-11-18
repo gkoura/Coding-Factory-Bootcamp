@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FiboIterativeApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1a15240363b34d3490181a8a0e3ba33fb596407")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FiboIterativeApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FiboIterativeApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
